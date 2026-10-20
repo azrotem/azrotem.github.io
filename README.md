@@ -20,6 +20,7 @@
 ## 💻 Skills & Current Courses
 - **Courses:** Python Programming using AI
 - **Tools & Languages:** Python, C++, PyMOL, ChimeraX
+
 ---
 
 ## 🔗 Contact & Links
