@@ -20,3 +20,8 @@
 ## 💻 Skills & Current Courses
 - **Courses:** Python Programming using AI
 - **Tools & Languages:** Python, C++, PyMOL, ChimeraX
+---
+
+## 🔗 Contact & Links
+- 💼 **[My LinkedIn Profile](https://www.linkedin.com/in/rotem--azulay)**
+- 🧪 **[The Fass Lab Website](https://www.weizmann.ac.il/csb/Fass/home)**
