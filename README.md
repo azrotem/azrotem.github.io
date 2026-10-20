@@ -1,3 +1,7 @@
+---
+title: Rotem Azulay
+---
+
 ## About Me
 
 🧬 PhD student in the Department of Chemical and Structural Biology (Chemical Sciences track) at the **Weizmann Institute of Science**, conducting research in **Prof. Deborah Fass's lab**.
