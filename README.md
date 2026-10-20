@@ -23,4 +23,4 @@ title: Rotem Azulay
 
 ## 💻 Skills & Current Courses
 * **Courses:** Python Programming using AI
-* **Tools & Languages:** Python, C++, Mathematica, PyMOL, ChimeraX
+* **Tools & Languages:** Python, C++, PyMOL, ChimeraX
