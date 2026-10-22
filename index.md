@@ -26,7 +26,7 @@ title: Rotem Azulay
     </p>
 
     <div class="research-image-wrapper">
-        <img src="research.jpg" alt="Research Illustration" class="research-pic">
+        <img src="assets/images/research.jpg" alt="Research Illustration" class="research-pic">
     </div>
 
     <div class="tools-list">
