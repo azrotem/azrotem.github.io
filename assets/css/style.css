@@ -1,52 +1,55 @@
-/* Color Palette Variables (Warm Yellow, Amber, & Soft Cream) */
-:root {
-    --bg-color: #FEFCF5;          /* Soft creamy yellow-tinted background */
-    --card-bg: #FFF7E6;           /* Warm soft butter-yellow for cards */
-    --text-main: #332D25;         /* Deep warm charcoal for easy reading */
-    --text-muted: #6B6153;        /* Soft muted brown-grey */
-    --amber-accent: #D9822B;      /* Warm golden amber accent */
-    --yellow-dark: #B36B1B;       /* Rich golden brown for headings */
-}
+---
+---
 
-/* Base Page Styling */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@import "minima";
+
+/* --- IMPORT GOOGLE FONTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+
+/* --- CUSTOM WARM-YELLOW DESIGN OVERRIDES --- */
+:root {
+    --bg-color: #FEFCF5;
+    --card-bg: #FFF7E6;
+    --text-main: #332D25;
+    --text-muted: #6B6153;
+    --amber-accent: #D9822B;
+    --yellow-dark: #B36B1B;
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-main);
-    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 17px;
-    line-height: 1.75;
-    padding: 60px 24px;
+    background-color: var(--bg-color) !important;
+    color: var(--text-main) !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-size: 17px !important;
+    line-height: 1.75 !important;
 }
 
-.container {
-    max-width: 720px;
-    margin: 0 auto;
+/* Override Minima wrapper to match your width */
+.page-content {
+    max-width: 720px !important;
+    padding: 40px 20px !important;
+    margin: 0 auto !important;
 }
 
-/* Header & Typography */
+.site-header {
+    border-bottom: 2px solid #F5E6CC !important;
+    background-color: var(--bg-color) !important;
+}
+
+/* Hero & Profile Layout */
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    margin-bottom: 55px;
+    margin-bottom: 45px;
     border-bottom: 2px solid #F5E6CC;
     padding-bottom: 35px;
 }
 
-h1 {
-    font-family: 'Lora', serif;
-    font-size: 3.4rem;
-    font-weight: 700;
-    color: var(--text-main);
-    line-height: 1.15;
-    margin-bottom: 8px;
+h1, h2, h3 {
+    font-family: 'Lora', serif !important;
+    color: var(--text-main) !important;
 }
 
 .eyebrow {
@@ -56,12 +59,12 @@ h1 {
     letter-spacing: 1.5px;
     color: var(--amber-accent);
     font-weight: 600;
+    margin-top: 5px;
 }
 
-/* Profile Picture */
 .profile-pic {
-    width: 190px;
-    height: 190px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
@@ -69,70 +72,26 @@ h1 {
     box-shadow: 0 8px 20px rgba(217, 130, 43, 0.12);
 }
 
-/* Section Headings */
-.section {
-    margin-bottom: 50px;
-}
-
-h2 {
-    font-family: 'Lora', serif;
-    font-size: 1.65rem;
-    margin-bottom: 18px;
-    letter-spacing: 0.3px;
-}
-
-.accent-title {
-    color: var(--yellow-dark);
-}
-
-.dark-title {
-    color: var(--text-main);
-    font-size: 1.45rem;
-    letter-spacing: 1px;
-}
-
-p {
-    margin-bottom: 16px;
-    color: #423A31;
-}
-
-/* Stylish Underlined Links */
+/* Links */
 a {
-    color: var(--text-main);
+    color: var(--text-main) !important;
     text-decoration: none;
     border-bottom: 2px solid var(--amber-accent);
-    transition: all 0.2s ease;
-    font-weight: 500;
 }
 
 a:hover {
     background-color: var(--amber-accent);
-    color: #fff;
+    color: #fff !important;
     border-radius: 3px;
     padding: 1px 4px;
 }
 
-/* Research Image (Now stretches full width to match the text) */
-.research-image-wrapper {
-    margin: 28px 0;
-    text-align: center;
-}
-
-.research-pic {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-}
-
-/* Skills Badges (Single line) */
+/* Tool Badges */
 .tools-list {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 12px;
-    margin-top: 24px;
-    overflow-x: auto;
-    padding-bottom: 6px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 .tool-badge {
@@ -140,14 +99,12 @@ a:hover {
     color: var(--yellow-dark);
     font-size: 0.85rem;
     font-weight: 600;
-    padding: 8px 16px;
+    padding: 6px 14px;
     border-radius: 50px;
     border: 1px solid #F0D9B5;
-    white-space: nowrap;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
 }
 
-/* Beyond the Lab Grid */
+/* Hobbies Grid */
 .hobbies-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -157,61 +114,20 @@ a:hover {
 
 .hobby-card {
     background-color: #FFF;
-    padding: 22px;
+    padding: 20px;
     border-radius: 14px;
     border: 1px solid #F5E6CC;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
 }
 
-.hobby-icon {
-    font-size: 1.8rem;
-    display: block;
-    margin-bottom: 10px;
-}
-
 .hobby-card h3 {
-    font-family: 'Lora', serif;
     font-size: 1.1rem;
-    color: var(--yellow-dark);
+    color: var(--yellow-dark) !important;
     margin-bottom: 8px;
 }
 
 .hobby-card p {
-    font-size: 0.92rem;
-    line-height: 1.55;
-    margin-bottom: 0;
+    font-size: 0.9rem;
     color: var(--text-muted);
-}
-
-/* Footer / Contact Links */
-.footer {
-    border-top: 2px solid #F5E6CC;
-    padding-top: 35px;
-    margin-bottom: 20px;
-}
-
-.contact-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 16px;
-}
-
-.contact-link {
-    font-weight: 600;
-    font-size: 0.98rem;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 600px) {
-    body {
-        padding: 35px 18px;
-    }
-    .hero {
-        flex-direction: column-reverse;
-        align-items: flex-start;
-    }
-    h1 {
-        font-size: 2.5rem;
-    }
+    margin-bottom: 0;
 }
