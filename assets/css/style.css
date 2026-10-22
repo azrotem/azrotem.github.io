@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "minima";
+@import "cayman";
 
 /* --- IMPORT GOOGLE FONTS --- */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
@@ -24,27 +24,16 @@ body {
     line-height: 1.75 !important;
 }
 
-/* Override Minima wrapper to match your width */
-.page-content {
+/* Cayman theme header wrapper overrides to fit your warm palette */
+.page-header {
+    background-image: linear-gradient(120deg, #D9822B, #B36B1B) !important;
+    padding: 3rem 4rem !important;
+}
+
+.main-content {
     max-width: 720px !important;
     padding: 40px 20px !important;
     margin: 0 auto !important;
-}
-
-.site-header {
-    border-bottom: 2px solid #F5E6CC !important;
-    background-color: var(--bg-color) !important;
-}
-
-/* Hero & Profile Layout */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    margin-bottom: 45px;
-    border-bottom: 2px solid #F5E6CC;
-    padding-bottom: 35px;
 }
 
 h1, h2, h3 {
