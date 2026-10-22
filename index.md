@@ -1,6 +1,7 @@
 ---
-layout: default
-title: Rotem Azulay
+---
+layout: page
+title: About Me
 ---
 
 ## ABOUT ME
