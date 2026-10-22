@@ -1,9 +1,6 @@
 ---
 layout: default
 title: Rotem Azulay
-heading: "Hi, I’m Rotem."
-eyebrow: "Welcome to my corner of the web"
-profile_pic: "profile.jpg"
 ---
 
 ## ABOUT ME
