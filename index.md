@@ -1,7 +1,15 @@
 ---
-layout: default
-title: Rotem Azulay
+layout: page
+title: ""
 ---
+
+<div class="hero">
+    <div class="hero-text">
+        <h1>Hi, I’m Rotem.</h1>
+        <span class="eyebrow">Welcome to my corner of the web</span>
+    </div>
+    <img src="profile.jpg" alt="Rotem Azulay" class="profile-pic">
+</div>
 
 ## ABOUT ME
 
@@ -19,9 +27,7 @@ Specifically, I investigate how densely packed sugar chains (O-glycosylation) an
 
 To look at these molecules up close, I combine **single-molecule FRET (smFRET)** measurements (in collaboration with [Prof. Hagen Hofmann's group](https://www.weizmann.ac.il/csb/Hofmann/home)) with structural visualization and computational tools.
 
-<div class="research-image-wrapper">
-<img src="research.jpg" alt="Research Illustration" class="research-pic">
-</div>
+![Research Illustration](research.jpg)
 
 <div class="tools-list">
 <span class="tool-badge">🔬 smFRET</span>
@@ -43,18 +49,25 @@ When I step away from the lab, here is how I love spending my time:
 
 <div class="hobbies-grid">
     <div class="hobby-card">
-        <span class="hobby-icon">🧘‍♀️</span>
-        <h3>Yoga & Mindfulness</h3>
+        <h3>🧘‍♀️ Yoga & Mindfulness</h3>
         <p>Unwinding on the mat to recharge, build strength, and find balance after long days of experiments.</p>
     </div>
     <div class="hobby-card">
-        <span class="hobby-icon">📚</span>
-        <h3>Reading</h3>
+        <h3>📚 Reading</h3>
         <p>Getting lost in a great book whenever I have a quiet moment with a cup of coffee.</p>
     </div>
     <div class="hobby-card">
-        <span class="hobby-icon">🐕</span>
-        <h3>Life with Bruno</h3>
+        <h3>🐕 Life with Bruno</h3>
         <p>Going on daily walks, runs, and outdoor adventures with my energetic Belgian Malinois, Bruno.</p>
     </div>
 </div>
+
+---
+
+## LET’S CONNECT
+
+Feel free to reach out for research collaborations or just to say hi!
+
+* ✉️ [rotem.azulay@weizmann.ac.il](mailto:rotem.azulay@weizmann.ac.il)
+* 💼 [LinkedIn Profile](https://www.linkedin.com/in/rotem--azulay)
+* 🏛️ [The Fass Lab](https://www.weizmann.ac.il/csb/Fass/home)
