@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotem Azulay | Personal Website</title>
+    <title>{{ page.title }} | {{ site.title }}</title>
     <!-- Google Fonts for an editorial, warm aesthetic -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +18,10 @@
         <!-- Header Section -->
         <header class="hero">
             <div class="hero-text">
-                <h1>Hi, I’m Rotem.</h1>
-                <span class="eyebrow">Welcome to my corner of the web</span>
+                <h1>{{ site.heading_text }}</h1>
+                <span class="eyebrow">{{ site.eyebrow_text }}</span>
             </div>
-            <img src="{{ site.baseurl }}/profile.jpg" alt="Rotem Azulay" class="profile-pic">
+            <img src="{{ site.baseurl }}/{{ site.profile_image }}" alt="{{ site.title }}" class="profile-pic">
         </header>
 
         <!-- MARKDOWN CONTENT IS INJECTED HERE -->
@@ -34,9 +34,9 @@
             <h2 class="dark-title">LET’S CONNECT</h2>
             <p>Feel free to reach out for research collaborations or just to say hi!</p>
             <div class="contact-links">
-                <a href="mailto:rotem.azulay@weizmann.ac.il" class="contact-link">✉️ rotem.azulay@weizmann.ac.il</a>
-                <a href="https://www.linkedin.com/in/rotem--azulay" target="_blank" class="contact-link">💼 LinkedIn Profile</a>
-                <a href="https://www.weizmann.ac.il/csb/Fass/home" target="_blank" class="contact-link">🏛️ The Fass Lab</a>
+                <a href="mailto:{{ site.email }}" class="contact-link">✉️ {{ site.email }}</a>
+                <a href="{{ site.linkedin_url }}" target="_blank" class="contact-link">💼 LinkedIn Profile</a>
+                <a href="{{ site.lab_url }}" target="_blank" class="contact-link">🏛️ {{ site.lab_name }}</a>
             </div>
         </footer>
 
