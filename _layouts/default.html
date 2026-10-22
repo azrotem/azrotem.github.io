@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotem Azulay | Personal Website</title>
+    <title>{{ page.title }}</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <!-- Link to your CSS inside assets/css/ -->
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
 </head>
 <body>
@@ -18,25 +18,27 @@
         <!-- Header Section -->
         <header class="hero">
             <div class="hero-text">
-                <h1>Hi, I’m Rotem.</h1>
-                <span class="eyebrow">Welcome to my corner of the web</span>
+                <h1>{{ page.heading }}</h1>
+                <span class="eyebrow">{{ page.eyebrow }}</span>
             </div>
-            <img src="{{ site.baseurl }}/profile.jpg" alt="Rotem Azulay" class="profile-pic">
+            {% if page.profile_pic %}
+            <img src="{{ site.baseurl }}/{{ page.profile_pic }}" alt="Profile Picture" class="profile-pic">
+            {% endif %}
         </header>
 
-        <!-- Markdown Content Injection -->
+        <!-- Main Content Injected from Markdown -->
         <main class="content-body">
             {{ content }}
         </main>
 
-        <!-- Contact Section -->
+        <!-- General Footer Section -->
         <footer class="section footer">
             <h2 class="dark-title">LET’S CONNECT</h2>
             <p>Feel free to reach out for research collaborations or just to say hi!</p>
             <div class="contact-links">
-                <a href="mailto:rotem.azulay@weizmann.ac.il" class="contact-link">✉️ rotem.azulay@weizmann.ac.il</a>
-                <a href="https://www.linkedin.com/in/rotem--azulay" target="_blank" class="contact-link">💼 LinkedIn Profile</a>
-                <a href="https://www.weizmann.ac.il/csb/Fass/home" target="_blank" class="contact-link">🏛️ The Fass Lab</a>
+                <a href="mailto:{{ site.email }}" class="contact-link">✉️ {{ site.email }}</a>
+                <a href="{{ site.linkedin_url }}" target="_blank" class="contact-link">💼 LinkedIn Profile</a>
+                <a href="{{ site.lab_url }}" target="_blank" class="contact-link">🏛️ {{ site.lab_name }}</a>
             </div>
         </footer>
 
