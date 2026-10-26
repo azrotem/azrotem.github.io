@@ -45,7 +45,7 @@ title: Rotem Azulay
 <section class="section">
     <h2 class="accent-title">MY OUTSIDE WORLD</h2>
     <p>
-        When I step away from the lab, here is how I love spending my time:
+        When I step away from the lab, here is how I love spending my time: Check
     </p>
     
     <div class="hobbies-grid">
