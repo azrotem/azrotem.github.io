@@ -2,7 +2,7 @@
 
 Welcome to the repository for my personal academic portfolio and website. I am a PhD student in the Department of Chemical and Structural Biology at the Weizmann Institute of Science.
 
-## Project Architecture!!!!!!
+## Project Architecture
 
 This website is hosted on GitHub Pages and built using **Jekyll**. 
 
